@@ -32,3 +32,12 @@
   -> using npm and npx is the other way to create a react app.
   -> install react - npm install react
   -> install react-dom - npm install react-dom
+  -> import react and react-dom in the javascript file.
+  -> parcel hosts your app to server, it gives dev build/ local server and refreshes the page automatically when we save the file.
+  -> Parcel gives HMR -> hot module replacement - it uses file watch algorithm - which is return in c++ - it keeps an eye on all the files. parcel keeps track of it and build it once again - it caches things - to give faster development experience - it cache's in the parcel-cache folder to build faster - if we delete cache folder and re build again it take more time than normal - when cache is created the build time is reduced - it also does image optimization - bundle all the files - compress the file - consistent hashing ?? - code splitting - differential bundling -> it takes care and supports different browsers and devices - it gives you error suggestions and diagnostics - host app on https -// parceljs.org website //- tree shaking algorithm -> it will remove unused code.
+  -> how to create a prod build - npx parcel build index.html (we should give the starting file in the package.json or remove it there) - when the build is created the parcel creates a dist folder it will compress all the files and place it in the dist folder - there are three main files in the dist map, index.html and js file
+  -> to support specific browser list - if we need to add a browserlist array in package.json - it is a node-module and package
+  browserlist: {
+  "last two chrome versions",
+  "last two firefox versions",
+  }
